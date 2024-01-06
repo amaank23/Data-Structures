@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class TreeNode {
-    public int data;
+    public Object data;
     public ArrayList<TreeNode> branches;
-    public TreeNode(int data){
+    public TreeNode(Object data){
         this.data = data;
         branches = new ArrayList<TreeNode>();
     }

@@ -3,15 +3,23 @@ public class Main {
     public static void main(String[] args) {
 
 
-        DoublyList myRoomList = new DoublyList();
+        Tree myMoveDB = new Tree();
+        myMoveDB.addNodeToRoot("Movies");
+        myMoveDB.addNodeToRoot("Action");
+        myMoveDB.addNodeToRoot("Comedy");
+        myMoveDB.addNodeToRoot("Adventure");
 
-        myRoomList.insert(205, "This is Room no 205");
-        myRoomList.insert(201, "This is Room no 201");
-        myRoomList.insert(202, "This is Room no 202");
-        myRoomList.insert(203, "This is Room no 202");
-        myRoomList.insert(206, "This is Room no 202");
-        myRoomList.insert(204, "This is Room no 202");
-        myRoomList.insert(209, "This is Room no 202");
-        myRoomList.displayList();
+        myMoveDB.addNodeToWhere("Action", "Mission Impossible");
+        myMoveDB.addNodeToWhere("Action", "Avengers");
+
+        myMoveDB.addNodeToWhere("Comedy", "American Pie");
+
+        myMoveDB.addNodeToWhere("Avengers", "Avengers Infiniy War");
+
+        myMoveDB.addNodeToWhere("American Pie", "American Pie Naked Mile");
+        myMoveDB.addNodeToWhere("American Pie Naked Mile", "American Pie Naked Mile 1");
+
+        myMoveDB.displayTree();
     }
+
 }
