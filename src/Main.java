@@ -1,25 +1,16 @@
 
 public class Main {
     public static void main(String[] args) {
+        Array myArr = new Array(6);
+        myArr.append(4);
+        myArr.append(2);
+        myArr.append(8);
+        myArr.append(2);
+        myArr.append(9);
+        myArr.append(1);
 
-
-        Tree myMoveDB = new Tree();
-        myMoveDB.addNodeToRoot("Movies");
-        myMoveDB.addNodeToRoot("Action");
-        myMoveDB.addNodeToRoot("Comedy");
-        myMoveDB.addNodeToRoot("Adventure");
-
-        myMoveDB.addNodeToWhere("Action", "Mission Impossible");
-        myMoveDB.addNodeToWhere("Action", "Avengers");
-
-        myMoveDB.addNodeToWhere("Comedy", "American Pie");
-
-        myMoveDB.addNodeToWhere("Avengers", "Avengers Infiniy War");
-
-        myMoveDB.addNodeToWhere("American Pie", "American Pie Naked Mile");
-        myMoveDB.addNodeToWhere("American Pie Naked Mile", "American Pie Naked Mile 1");
-
-        myMoveDB.displayTree();
+        myArr.mergeSort();
+        myArr.display();
     }
 
 }

@@ -1,5 +1,5 @@
 public class Tree {
-    private TreeNode root;
+    public TreeNode root;
 
     public Tree(){
         this.root = null;
